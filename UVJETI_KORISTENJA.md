@@ -17,7 +17,8 @@ Aplikacija omogućuje registriranim korisnicima (dalje: „Korisnik") naručivan
 
 ## 2. Registracija i korisnički račun
 
-- Registracija je besplatna. Registrirati se mogu osobe **starije od 16 godina**.
+- Registracija je besplatna. Registrirati se mogu osobe **starije od 13 godina**. Osobe mlađe od 16 godina trebaju privolu roditelja/zakonskog zastupnika (čl. 8. GDPR).
+- **Alkoholna pića se ne prodaju osobama mlađim od 18 godina.** Prodaja alkohola obavlja se isključivo u ugostiteljskom objektu uz provjeru identifikacijskog dokumenta. Obrt zadržava pravo odbiti narudžbu koja sadrži alkohol ako se sumnja da je kupac maloljetan, a kupac ne može predočiti valjanu osobnu ispravu pri preuzimanju.
 - Za registraciju je potrebna važeća e-mail adresa ili Google račun.
 - Korisnik je dužan čuvati podatke za prijavu i ne smije ih dijeliti s trećim osobama.
 - Pružatelj može suspendirati ili obrisati račun u slučaju zloporabe, lažnih narudžbi ili kršenja Uvjeta.

@@ -82,9 +82,13 @@ Koristimo tehničke i organizacijske mjere za zaštitu podataka:
 - Pristup bazi podataka ograničen je na ovlaštene osobe.
 - Vlasnik obrta odgovoran je za poštivanje sigurnosnih pravila.
 
-## 7. Djeca
+## 7. Djeca i maloljetnici
 
-Aplikacija nije namijenjena djeci mlađoj od 16 godina. Ako saznamo da smo prikupili podatke djeteta mlađeg od 16 godina bez privole roditelja, iste ćemo odmah obrisati.
+Aplikacija je namijenjena osobama **starijim od 13 godina**. Osobe mlađe od 16 godina prema čl. 8. GDPR-a moraju imati privolu roditelja ili zakonskog zastupnika za korištenje uslugu informacijskog društva; pretpostavlja se da takvu privolu posjeduju prilikom registracije.
+
+**Alkoholna pića se ne prodaju osobama mlađim od 18 godina** (Zakon o trgovini, Zakon o ograničavanju uporabe duhanskih i srodnih proizvoda te alkohola). Prodaja alkohola obavlja se isključivo u ugostiteljskom objektu uz provjeru identifikacijskog dokumenta.
+
+Ako saznamo da smo prikupili podatke djeteta mlađeg od 13 godina bez privole roditelja, iste ćemo odmah obrisati.
 
 ## 8. Izmjene Politike
 
