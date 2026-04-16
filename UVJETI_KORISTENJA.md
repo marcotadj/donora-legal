@@ -4,7 +4,7 @@
 **Pružatelj usluge:** Donora, obrt za ugostiteljstvo, vl. Marko Kunštek
 **Sjedište:** Ulica dr. Ljudevita Gaja 5, 49000 Krapina
 **OIB:** 48726073820
-**Kontakt:** obrt.donora@gmail.com · 091 921 0023
+**Kontakt:** obrt.donora@gmail.com · 092 263 1136
 **Datum zadnje izmjene:** 16.04.2026.
 
 ---
@@ -98,4 +98,4 @@ Prije pokretanja sudskog spora, potrošač može iskoristiti:
 Ulica dr. Ljudevita Gaja 5, 49000 Krapina
 OIB: 48726073820
 E-mail: obrt.donora@gmail.com
-Telefon: 091 921 0023
+Telefon: 092 263 1136

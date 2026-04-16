@@ -3,7 +3,7 @@
 **Donora, obrt za ugostiteljstvo, vl. Marko Kunštek**
 OIB: 48726073820 · MBO: 98607545
 Ulica dr. Ljudevita Gaja 5, 49000 Krapina
-📧 obrt.donora@gmail.com · 📞 091 921 0023
+📧 obrt.donora@gmail.com · 📞 092 263 1136
 
 ---
 

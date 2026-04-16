@@ -12,7 +12,7 @@
 
 **Kontakt:**
 - E-mail: obrt.donora@gmail.com
-- Telefon: 091 921 0023
+- Telefon: 092 263 1136
 
 **Aplikacija:** Burger Bar by Art (Android aplikacija za naručivanje)
 
