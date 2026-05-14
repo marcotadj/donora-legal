@@ -29,7 +29,8 @@ Aplikacija je dostupna kao Android APK i kao progresivna web-aplikacija (PWA) na
 - Narudžba se smatra zaprimljenom kad Korisnik dobije potvrdu u Aplikaciji (status „pending" ili sljedeći).
 - Pružatelj zadržava pravo odbiti narudžbu zbog: prekoračenja kapaciteta kuhinje, tehničkih smetnji, zatvaranja ili aktivne **cateringe blokade**.
 - **Radno vrijeme i prihvat narudžbi:**
-  - Ponedjeljak – Petak: 09:00 – 22:00
+  - Ponedjeljak – Četvrtak: 09:00 – 22:00
+  - Petak: 09:00 – 23:00
   - Subota: 14:00 – 22:00
   - Nedjelja: ne radimo
 - Narudžbe se automatski **zaustavljaju 20 minuta prije zatvaranja**.
