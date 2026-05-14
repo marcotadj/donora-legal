@@ -1,15 +1,15 @@
 # Politika privatnosti
 
-**Aplikacija:** Burger Bar by Art
+**Aplikacija:** Burger Bar by Art (Android + web-aplikacija na burger-bar.web.app)
 **Voditelj obrade:** Donora, obrt za ugostiteljstvo, vl. Marko Kunštek
 **Sjedište:** Ulica dr. Ljudevita Gaja 5, 49000 Krapina, Republika Hrvatska
 **OIB:** 48726073820
 **Kontakt:** obrt.donora@gmail.com · 092 263 1136
-**Datum zadnje izmjene:** 16.04.2026.
+**Datum zadnje izmjene:** 14.05.2026.
 
 ---
 
-Ova Politika privatnosti objašnjava kako **Donora, obrt za ugostiteljstvo, vl. Marko Kunštek** (dalje: „Donora", „mi", „naš") prikuplja, koristi, pohranjuje i štiti osobne podatke korisnika mobilne aplikacije **Burger Bar by Art** (dalje: „Aplikacija").
+Ova Politika privatnosti objašnjava kako **Donora, obrt za ugostiteljstvo, vl. Marko Kunštek** (dalje: „Donora", „mi", „naš") prikuplja, koristi, pohranjuje i štiti osobne podatke korisnika mobilne i web-aplikacije **Burger Bar by Art** (dalje: „Aplikacija"). Aplikacija je dostupna kao Android APK i kao progresivna web-aplikacija na adresi `https://burger-bar.web.app`.
 
 Obrada osobnih podataka provodi se u skladu s **Uredbom (EU) 2016/679 (GDPR)** i **Zakonom o provedbi Opće uredbe o zaštiti podataka (NN 42/2018)**.
 
@@ -19,12 +19,13 @@ Obrada osobnih podataka provodi se u skladu s **Uredbom (EU) 2016/679 (GDPR)** i
 - **Podaci o računu:** e-mail adresa, ime i prezime (preko Google prijave ili registracije e-mailom), lozinka (pohranjena isključivo kod Firebase Authenticationa u hashiranom obliku — nama nije vidljiva).
 - **Podaci o narudžbi:** ime za narudžbu, sadržaj narudžbe (artikli, količina, napomena), vrijeme preuzimanja, status narudžbe.
 - **Chat poruke:** tekst poruka koje razmjenjujete s kuhinjom u sklopu pojedine narudžbe.
-- **Lojalty podaci:** broj pečata, broj nagrada, ukupan broj narudžbi, referral (preporuka) kod.
+- **Lojalty podaci:** broj pečata, broj nagrada (uključujući manualne nagrade dodijeljene od strane vlasnika), ukupan broj narudžbi, referral (preporuka) kod, datum dobrodošlice (welcome bonus pečati).
 
 ### 1.2. Podaci koji se prikupljaju automatski
 - **Jedinstveni ID korisnika (UID)** dodijeljen od Firebase Authenticationa.
-- **Token za push notifikacije** (samo ako ste dali privolu za obavijesti).
-- **Osnovni tehnički podaci** potrebni za rad aplikacije (verzija app-a, vrsta uređaja — Android).
+- **Token za push notifikacije** (FCM — Android push token ili Web Push token uz VAPID, samo ako ste dali privolu za obavijesti).
+- **Vrijeme zadnje promo obavijesti** (`lastReengagementAt`) — služi isključivo za anti-spam (sprječavanje opetovanog slanja iste promo poruke).
+- **Osnovni tehnički podaci** potrebni za rad aplikacije (verzija app-a, vrsta uređaja — Android, ili web preglednik).
 
 ### 1.3. Podatke NE prikupljamo
 - Ne prikupljamo podatke o lokaciji.
@@ -40,16 +41,18 @@ Obrada osobnih podataka provodi se u skladu s **Uredbom (EU) 2016/679 (GDPR)** i
 | Vođenje korisničkog računa | čl. 6(1)(b) — izvršenje ugovora |
 | Komunikacija putem chata | čl. 6(1)(b) — izvršenje ugovora |
 | Loyalty program i preporuke (referral) | čl. 6(1)(b) — izvršenje ugovora / čl. 6(1)(a) — privola |
-| Slanje push obavijesti o statusu narudžbe | čl. 6(1)(b) — izvršenje ugovora |
-| Slanje promotivnih push obavijesti (npr. podsjetnik na ručak/večeru) | čl. 6(1)(a) — privola (možete je povući u postavkama sustava) |
+| Slanje push obavijesti o statusu narudžbe (u pripremi, gotovo, u dostavi, preuzeto, otkazano) | čl. 6(1)(b) — izvršenje ugovora |
+| Slanje promotivnih push obavijesti (3× dnevno: 11:30, 14:30, 19:00) | čl. 6(1)(a) — privola (možete je povući u postavkama sustava) |
+| Slanje re-engagement obavijesti korisnicima koji nisu naručili 10+ dana | čl. 6(1)(a) — privola (možete je povući) |
+| Obavijest o manualno dodijeljenoj nagradi (gift) od vlasnika | čl. 6(1)(b) — izvršenje ugovora (loyalty program) |
 | Vođenje evidencije (računi, porezne obveze) | čl. 6(1)(c) — zakonska obveza |
 
 ## 3. Kome prenosimo podatke
 
 Vaše podatke ne prodajemo. Prenosimo ih isključivo sljedećim obrađivačima koji pružaju tehničku infrastrukturu:
 
-- **Google LLC / Google Ireland Ltd.** — Firebase Authentication, Cloud Firestore, Firebase Cloud Messaging (hosting baze podataka, autentifikacija, push notifikacije). Podaci se pohranjuju na Google serverima u EU/SAD. Google ima Standard Contractual Clauses (SCC) za prijenos u SAD.
-- **Unutar obrta Donora** — vlasnik i kuhinjsko osoblje imaju pristup narudžbama radi njihovog izvršenja.
+- **Google LLC / Google Ireland Ltd.** — Firebase Authentication, Cloud Firestore, Firebase Cloud Messaging (FCM, uključujući Web Push uz VAPID), Firebase Hosting, Cloud Functions, Cloud Scheduler (za vremenski raspored promo obavijesti). Podaci se pohranjuju na Google serverima u EU/SAD. Google ima Standard Contractual Clauses (SCC) za prijenos u SAD.
+- **Unutar obrta Donora** — vlasnik i kuhinjsko osoblje imaju pristup narudžbama radi njihovog izvršenja. Vlasnik ima dodatno pravo dodjele besplatnog artikla pojedinom kupcu (manualna nagrada) putem admin aplikacije.
 
 Podaci se ne prenose trećim osobama u marketinške svrhe.
 

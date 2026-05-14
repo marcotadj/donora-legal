@@ -7,15 +7,16 @@
 **Kontakt:** obrt.donora@gmail.com · 092 263 1136
 **Odgovorna osoba:** Marko Kunštek (vlasnik obrta)
 **Datum uspostave evidencije:** 16.04.2026.
+**Datum zadnje izmjene:** 14.05.2026.
 
 ---
 
 > **Napomena:** Ovo je interni dokument koji se ne objavljuje javno. Služi kao dokaz usklađenosti s GDPR-om (čl. 30.) i pokazuje se nadzornom tijelu (AZOP) na zahtjev. Čuvati u papirnatom ili elektroničkom obliku minimalno 5 godina.
 
-## 1. Obrada podataka — Mobilna aplikacija „Burger Bar by Art"
+## 1. Obrada podataka — Aplikacija „Burger Bar by Art" (Android + web)
 
 ### 1.1. Kategorije ispitanika
-- Registrirani korisnici mobilne aplikacije (kupci)
+- Registrirani korisnici mobilne i web-aplikacije (kupci)
 
 ### 1.2. Kategorije osobnih podataka
 | Kategorija | Primjer |
@@ -23,15 +24,16 @@
 | Identifikacijski podaci | E-mail, ime i prezime, Firebase UID |
 | Komunikacijski podaci | Sadržaj chata s kuhinjom |
 | Podaci o narudžbi | Stavke menija, količine, vrijeme, napomene |
-| Lojalty podaci | Broj pečata, referral kod, broj preporuka |
-| Tehnički podaci | FCM token (push), verzija app-a, tip uređaja (Android) |
+| Lojalty podaci | Broj pečata (uključujući welcome bonus i referral), broj aktivnih i ukupnih nagrada, referral kod, povijest dodijeljenih manualnih nagrada (giftRewards), oznaka `lastReengagementAt` |
+| Tehnički podaci | FCM token (Android i/ili Web Push uz VAPID), verzija app-a, tip uređaja (Android ili web preglednik) |
 
 ### 1.3. Svrhe obrade
 1. Izvršenje ugovora o naručivanju hrane i pića
 2. Vođenje korisničkog računa i komunikacija s kupcem
-3. Provođenje loyalty programa (pečati, nagrade, referral)
-4. Slanje obavijesti o statusu narudžbe
-5. Slanje promotivnih obavijesti (samo uz privolu)
+3. Provođenje loyalty programa (pečati, welcome bonus, referral, manualne nagrade od vlasnika)
+4. Slanje obavijesti o statusu narudžbe (cooking, ready, delivering, done, cancelled)
+5. Slanje promotivnih obavijesti (do 3× dnevno, u 11:30, 14:30, 19:00 — samo uz privolu)
+6. Slanje re-engagement obavijesti korisnicima koji nisu naručili 10+ dana (samo uz privolu, najviše 1× u 14 dana)
 
 ### 1.4. Pravna osnova (čl. 6. GDPR)
 - **čl. 6(1)(b)** — izvršenje ugovora: narudžbe, chat, loyalty, račun
@@ -39,8 +41,9 @@
 - **čl. 6(1)(c)** — zakonska obveza: čuvanje poreznih podataka
 
 ### 1.5. Primatelji podataka
-- Google LLC / Google Ireland Ltd. (Firebase Authentication, Cloud Firestore, Firebase Cloud Messaging) — obrađivač
+- Google LLC / Google Ireland Ltd. (Firebase Authentication, Cloud Firestore, Firebase Cloud Messaging FCM uključujući Web Push, Firebase Hosting, Cloud Functions, Cloud Scheduler) — obrađivač
 - Vlasnik obrta i zaposlenici u objektu (pristup narudžbama)
+- Vlasnik obrta dodatno: pristup popisu kupaca i mogućnost dodjele manualne nagrade (besplatnog artikla) pojedinom kupcu putem admin aplikacije
 
 ### 1.6. Prijenos u treće zemlje
 - Google kao obrađivač može pohranjivati podatke na poslužiteljima u SAD-u. Prijenos je osiguran **Standard Contractual Clauses (SCC)** koje je Google prihvatio. Dokumentacija: https://cloud.google.com/terms/data-processing-addendum
@@ -101,6 +104,7 @@ U slučaju povrede sigurnosti osobnih podataka:
 | Datum | Promjena | Potpis |
 |---|---|---|
 | 16.04.2026. | Uspostava evidencije | Marko Kunštek |
+| 14.05.2026. | Dodano: web-aplikacija (burger-bar.web.app) s FCM Web Push (VAPID), welcome bonus (3 pečata), referral promijenjen s +1 na +2 pečata, manualne nagrade od vlasnika (giftRewards), proširene push obavijesti o statusu narudžbe, promo obavijesti 3× dnevno, re-engagement obavijesti nakon 10 dana | Marko Kunštek |
 
 ---
 

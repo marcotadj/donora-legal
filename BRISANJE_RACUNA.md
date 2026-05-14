@@ -1,9 +1,10 @@
 # Brisanje korisničkog računa i podataka
 
-**Aplikacija:** Burger Bar by Art
+**Aplikacija:** Burger Bar by Art (Android + web na https://burger-bar.web.app)
 **Izdavatelj:** Donora, obrt za ugostiteljstvo, vl. Marko Kunštek
 **OIB:** 48726073820
 **Sjedište:** Ulica dr. Ljudevita Gaja 5, 49000 Krapina
+**Datum zadnje izmjene:** 14.05.2026.
 
 ---
 
@@ -24,8 +25,10 @@ Prilikom brisanja računa trajno se brišu:
 - E-mail adresa, ime i Firebase Authentication identitet
 - Sve vaše narudžbe iz baze podataka
 - Sve poruke iz chata s kuhinjom
-- Loyalty pečati, nagrade i referral kod
-- Push notifikacijski token
+- Loyalty pečati (uključujući welcome bonus i referral pečate), nagrade i referral kod
+- Povijest manualnih nagrada (giftRewards) dodijeljenih od strane vlasnika
+- Push notifikacijski token (Android FCM i/ili Web Push)
+- Oznaka `lastReengagementAt` (anti-spam zapis za promo obavijesti)
 
 ## Što se čuva (zbog zakonskih obveza)
 

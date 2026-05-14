@@ -1,19 +1,19 @@
 # Uvjeti korištenja
 
-**Aplikacija:** Burger Bar by Art
+**Aplikacija:** Burger Bar by Art (Android + web-aplikacija na burger-bar.web.app)
 **Pružatelj usluge:** Donora, obrt za ugostiteljstvo, vl. Marko Kunštek
 **Sjedište:** Ulica dr. Ljudevita Gaja 5, 49000 Krapina
 **OIB:** 48726073820
 **Kontakt:** obrt.donora@gmail.com · 092 263 1136
-**Datum zadnje izmjene:** 16.04.2026.
+**Datum zadnje izmjene:** 14.05.2026.
 
 ---
 
 ## 1. Opće odredbe
 
-Ovim Uvjetima korištenja (dalje: „Uvjeti") uređuje se korištenje mobilne aplikacije **Burger Bar by Art** (dalje: „Aplikacija") koju izdaje obrt **Donora** (dalje: „Pružatelj"). Korištenjem Aplikacije prihvaćate ove Uvjete i Politiku privatnosti.
+Ovim Uvjetima korištenja (dalje: „Uvjeti") uređuje se korištenje mobilne i web-aplikacije **Burger Bar by Art** (dalje: „Aplikacija") koju izdaje obrt **Donora** (dalje: „Pružatelj"). Korištenjem Aplikacije prihvaćate ove Uvjete i Politiku privatnosti.
 
-Aplikacija omogućuje registriranim korisnicima (dalje: „Korisnik") naručivanje hrane i pića iz objekta obrta Donora putem pametnog telefona, s preuzimanjem u objektu.
+Aplikacija je dostupna kao Android APK i kao progresivna web-aplikacija (PWA) na adresi `https://burger-bar.web.app`, te omogućuje registriranim korisnicima (dalje: „Korisnik") naručivanje hrane i pića iz objekta obrta Donora putem pametnog telefona ili web preglednika, s preuzimanjem u objektu.
 
 ## 2. Registracija i korisnički račun
 
@@ -29,8 +29,7 @@ Aplikacija omogućuje registriranim korisnicima (dalje: „Korisnik") naručivan
 - Narudžba se smatra zaprimljenom kad Korisnik dobije potvrdu u Aplikaciji (status „pending" ili sljedeći).
 - Pružatelj zadržava pravo odbiti narudžbu zbog: prekoračenja kapaciteta kuhinje, tehničkih smetnji, zatvaranja ili aktivne **cateringe blokade**.
 - **Radno vrijeme i prihvat narudžbi:**
-  - Ponedjeljak – Četvrtak: 09:00 – 21:00
-  - Petak: 09:00 – 22:00
+  - Ponedjeljak – Petak: 09:00 – 22:00
   - Subota: 14:00 – 22:00
   - Nedjelja: ne radimo
 - Narudžbe se automatski **zaustavljaju 20 minuta prije zatvaranja**.
@@ -56,10 +55,12 @@ Aplikacija omogućuje registriranim korisnicima (dalje: „Korisnik") naručivan
 ## 7. Loyalty program i preporuke (referral)
 
 - Sudjelovanje u loyalty programu je besplatno i automatsko za registrirane korisnike.
-- Za svaku plaćenu narudžbu Korisnik dobiva **1 pečat**. Nakon sakupljenih 10 pečata stječe pravo na nagradu u skladu s pravilima istaknutima u Aplikaciji.
-- Preporukom prijatelja putem osobnog QR koda, oba korisnika (preporučitelj i novi korisnik) dobivaju **po 1 dodatni pečat** kad se novi korisnik registrira koristeći kod.
+- **Welcome bonus:** Pri prvoj registraciji Korisnik dobiva **3 pečata** na poklon.
+- **Pečat za narudžbu:** Za svaku plaćenu narudžbu Korisnik dobiva **1 pečat**. Nakon sakupljenih 10 pečata stječe pravo na 1 besplatni artikl u skladu s pravilima istaknutima u Aplikaciji.
+- **Preporuka prijatelja (referral):** Korisnik može svoj 6-znamenkasti referral kod podijeliti s prijateljem. Kad se prijatelj registrira i upiše taj kod pri registraciji, oba korisnika dobivaju **po 2 dodatna pečata**.
+- **Manualna nagrada od vlasnika:** Vlasnik (Pružatelj) može u bilo kojem trenutku dodijeliti besplatni artikl pojedinom Korisniku kao gest dobre volje (rođendan, kompenzacija, promo). Takve nagrade vidljive su Korisniku na kartici vjernosti i u povijesti dodijeljenih nagrada.
 - Pečati i nagrade nisu prenosivi, nisu zamjenjivi za gotovinu i vrijede do brisanja računa.
-- Pružatelj zadržava pravo ukloniti pečate stečene prijevarom ili zlouporabom (npr. fiktivne narudžbe, duplicirani računi).
+- Pružatelj zadržava pravo ukloniti pečate i nagrade stečene prijevarom ili zlouporabom (npr. fiktivne narudžbe, duplicirani računi, lažne preporuke).
 
 ## 8. Chat s kuhinjom
 
@@ -68,8 +69,14 @@ Aplikacija omogućuje registriranim korisnicima (dalje: „Korisnik") naručivan
 
 ## 9. Obavijesti (push notifikacije)
 
-- Obavijesti o statusu narudžbe su sastavni dio usluge.
-- Promotivne obavijesti (npr. podsjetnik na ručak/večeru) šalju se isključivo uz **privolu korisnika**. Privolu možete povući u postavkama uređaja → Aplikacije → Burger Bar by Art → Obavijesti.
+- **Obavijesti o statusu narudžbe** sastavni su dio usluge i šalju se za sljedeće prijelaze: u pripremi, gotovo, u dostavi, preuzeto, otkazano.
+- **Obavijest o nagradi:** Korisnik dobiva obavijest kad ostvari nagradu (10 pečata) ili kad mu vlasnik dodijeli manualnu nagradu.
+- **Promotivne obavijesti:** šalju se uz **privolu korisnika** do **3 puta dnevno** u terminima 11:30, 14:30 i 19:00 (vrijeme Zagreb), s rotirajućim tekstovima.
+- **Re-engagement obavijesti:** Korisnicima koji nisu naručili 10+ dana može se poslati podsjetnik (najviše jednom u 14 dana).
+- Privolu možete povući:
+  - na Android uređaju: Postavke → Aplikacije → Burger Bar by Art → Obavijesti
+  - u web pregledniku: Postavke stranice → Obavijesti → Blokiraj za burger-bar.web.app
+- Web push notifikacije koriste FCM (Firebase Cloud Messaging) Web SDK s VAPID javnim ključem. Token se sprema u korisnikov dokument u Firestoru i koristi isključivo za slanje obavijesti.
 
 ## 10. Intelektualno vlasništvo
 
